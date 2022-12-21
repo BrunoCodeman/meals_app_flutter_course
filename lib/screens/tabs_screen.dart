@@ -31,9 +31,7 @@ class _TabScreenState extends State<TabScreen> {
         appBar: AppBar(
           title: Text(_pages[_selectedIndex]["title"]),
         ),
-        drawer: Drawer(
-          child: MainDrawer(),
-        ),
+        drawer: MainDrawer(),
         body: _pages[_selectedIndex]["page"],
         bottomNavigationBar: BottomNavigationBar(
             onTap: _selectPage,
